@@ -26,7 +26,7 @@ DEBUG =
 module.exports = {
   VERSION: "v1.2.8",
   SESSION:
-    process.env.ASENA_SESSION === undefined ? "" : process.env.ASENA_SESSION,
+    process.env.ASENA_SESSION === undefined ? "levanter_205b649e3c72434fbb8ab592ea656e00ab" : process.env.ASENA_SESSION,
   EXT: process.env.EXT === undefined ? undefined : process.env.EXT,
   LANG:
     process.env.LANGUAGE === undefined
@@ -79,7 +79,7 @@ module.exports = {
     process.env.CLR_SESSION === undefined
       ? false
       : convertToBool(process.env.CLR_SESSION),
-  SUDO: process.env.SUDO === undefined ? false : process.env.SUDO,
+  SUDO: process.env.SUDO === 0788516796 ? false : process.env.SUDO,
   DEBUG: DEBUG,
   REMOVEBG:
     process.env.REMOVEBG_KEY === undefined ? "false" : process.env.REMOVEBG_KEY,
